@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            width: 100%;
+            height:200vh;
+        }
+        *{
+            margin: 0px;
+        }
+        .c1{
+            width:100%;
+            height:10vh;
+            background-color: aliceblue;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+        }
+        .c2{
+            position: relative;
+            width:8%;
+            height:8vh;
+            top:0vh;
+            left:2%;
+            
+        }
+        .c3{
+            position: relative;
+            width:15%;
+            height:4vh;
+            left:-4%;
+            bottom:0vh;
+            border-radius:50px;
+            border-color: black;
+            text-align: center;
+        }
+        .x{
+            position:absolute;
+            left:16%;
+            z-index:1;
+            font-size: 25px;
+    
+        }
+        span{
+            position: relative;
+            top:-2vh;       
+        
+        }
+        .y{
+            position: relative;
+            width:40px;
+            height:40px;
+            top:2vh
+        }
+        .c4{
+            position: relative;
+            left:0%;
+            align-content: space-between;
+        }
+        .t{
+            width:60px;
+            height:60px;
+            border-radius: 50%;
+        }
+        .c7{
+            position: relative;
+            width: 20%;
+            height:90vh;
+            background-color:aliceblue;
+            left:5%;
+        }
+        .z{
+            position: relative;
+            width:256px;
+            height:256px;
+        }
+        .p{
+            position: relative;
+            width:70px;
+            height:70px;
+            border-radius:50%;
+            left:30%;
+            top:-6vh;
+        }
+        .k{
+            position: relative;
+            left:10%;
+            margin-top: 10px;
+        }
+        .d{
+            color: green;
+        }
+        .o{
+            margin-right: 64px;
+        }
+        .m{
+            margin-right: 79px;
+        }
+        .n{
+            margin-right: 70px;
+        }
+        .d10{
+            position: relative;
+            width:100%;
+            height:30%;
+            display: flex;
+            justify-content: space-around;
+        }
+        .d9{
+            position: relative;
+            width:20px;
+            height:20px;
+            top:25px;
+            font-size:smaller;
+        }
+        .d8{
+            position: relative;
+            top:23px;
+        }
+        .b10{
+            position:absolute;
+            width:50%;
+            height:25vh;
+            left:30%;
+            top:12vh;
+            background-color:aliceblue;
+        }
+        .a10{
+            position: absolute;
+            width:15%;
+            height: 40vh;
+            left: 83%;
+            top:12vh;
+            background-color:aliceblue;
+        }
+        .a9{
+            position: relative;
+            left:5%;
+            margin-top: 25px;
+            margin-bottom:30px;
+        }
+        .a8{
+            position: relative;
+            left:5%;
+            margin: 5px 0px;
+        }
+        .t10{
+            position: absolute;
+            width:15%;
+            height:40vh;
+            top:55vh;
+            left:83%;
+            background-color:aliceblue;
+        }
+        .t9{
+            position: relative;
+            top:4vh;
+            left:20px;
+        }
+        .t8{
+            position: relative;
+            width:70px;
+            height:70px;
+            top:6vh;
+            left:30px;
+            border-radius: 50%;
+        }
+        .t7{
+            position: relative;
+            top:100px;
+            font-size: 12px;
+            left:20px;
+
+        }
+        .t6{
+            position: relative;
+            width:60px;
+            font-size: 10px;
+            left:90px;
+            top:-12px;
+            border-radius: 10px;
+            color: blue;
+            border-color: blue;
+
+        }
+        .t5{
+            position: relative;
+            text-align: center;
+            top:20px;
+        }
+        .b9{
+            position: relative;
+            width:70px;
+            height:70px;
+            left:20px;
+            border-radius: 50%;
+            top:10px;
+        }
+        .b8{
+            position: absolute;
+            left:110px;
+            top:33px;
+        }
+        .b7{
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            top:20px;
+        }
+        .b5{
+            position: relative;
+            border: 1px solid blue;
+            height: 68px;
+            top:-22px;
+
+    
+        }
+        .d7{
+            position: relative;
+            border: 1px solid blue;
+            top:-1px;
+            height:80px;
+        }
+       .k10{
+        position: absolute;
+        top:30vh;
+        width:50%;
+        
+       }
+       .b4{
+        position: relative;
+        top:10px;
+        width:85%;
+
+       }
+       .b3{
+        position: relative;
+        left:102%;
+
+       }
+       .m11{
+        position:absolute;
+        width:20%;
+        height:80vh;
+        left:5%;
+        top:105vh;
+        background-color: aliceblue;
+       }
+       .m12{
+        position: relative;
+        left:20px;
+        top:20px;
+        color: grey;
+       }
+       .m9{
+        position: relative;
+        width:12px;
+        height:12px;
+        top:40px;
+        left:20px;
+       }
+       .m8{
+        position: relative;
+        left:40px;
+        top:30px;
+       }
+       .m13{
+       line-height: 10px;
+       }
+       .m14{
+        position: relative;
+        left:20px;
+        top:60px;
+        color: grey;
+        font-size: 17px;
+    }
+    .m15{
+        position: relative;
+        line-height:10px;
+        }
+    .m16{
+        position: relative;
+        width:12px;
+        height:12px;
+        top:70px;
+        left:20px;
+    }
+    .m17{
+        position: relative;
+        left:40px;
+        top:60px;
+    }
+    .m18{
+        position: relative;
+        left:20px;
+        top:80px;
+        color: grey;
+        font-size: 17px;
+    }
+    .m19{
+        position: relative;
+        width:12px;
+        height:12px;
+        top:85px;
+        left:20px;
+    }
+    .m20{
+        position: relative;
+        left:40px;
+        top:75px;
+    }
+    .m21{
+        position: relative;
+        top:90px;
+    }
+    .m22{
+        position: relative;
+        top:105px;
+        left:70px;
+    }
+        
+
+    </style>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="c1">
+       <img class="c2" src="linkedin.png">
+       <input class="c3" type="text" value="" placeholder="search">
+        <i class="x fa-solid fa-magnifying-glass"></i>
+     <div class="c4">
+       <span><img class="y" src="home.png">Home</span>
+       <span><img class="y"  src="network.png">My Network</span>
+       <span><img class="y" src="jobs.png">Jobs</span>
+       <span><img class="y" src="message.png">Messaging</span>
+       <span><img class="y" src="notification.png">Notifications</span>
+    </div>
+        <img class="t" src="business.jpg">
+       
+
+
+    </div>
+    <div class="c7">
+        <img class="z" src="business.jpg">
+        <img class="p" src="business.jpg">
+        <h2 class="k">The Rock</h2>
+        <p class="k"><b>WWE Rockers in world </b></p>
+        <p class="k d"><b class="o">your profile views</b>1123</p>
+        <p class="k d"><b class="m">your post views</b>1123</p>
+        <p class="k d"><b class="n">your connections</b>1123</p>
+        <br>
+        <hr>
+        <div class="d10">
+           <div><img class="d9" src="items.png"><span class="d8">My item</span></div>
+           <div class="d7"></div>
+           <div><img class="d9" src="premium.png"><span class="d8">Try premium</span></div>
+
+        </div>
+    </div>
+    <div class="b10">
+     <div><img class="b9" src="business.jpg">
+        <h5 class="b8">Write a post</h5>
+    </div>
+    <br>
+    <hr>
+    <div class="b7">
+        <div><img src="photo.png"><span>photo</span>
+        </div>
+        <div class="b5"></div>
+        <div><img src="video.png"><span>vedio</span>
+        </div>
+        <div class="b5"></div>
+        <div><img src="event.png"><span>event</span>
+        </div>
+        <div class="b5"></div>
+        <div class="b6">post</div>
+        </div>
+        <div class="b4"><hr><span class="b3">sort by top<i class="fa-solid fa-caret-down"></i></span></i></div>
+
+    </div>
+    <div class="a10">
+        <div><h3 class="a9">Trending news</h3></div>
+        <div class="a8"><h5>High demand for skilled programmers</h5></div>
+        <div class="a8"><h6>1m ago 2234reads</h6></div>
+        <div class="a8"><h5>High demand for skilled programmers</h5></div>
+        <div class="a8"><h6>1m ago 2234reads</h6></div>
+        <div class="a8"><h5>High demand for skilled programmers</h5></div>
+        <div class="a8"><h6>1m ago 2234reads</h6></div>
+
+    </div>
+    <div class="t10">
+        <div class="t5">Ad</div>
+        <div><h5 class="t9">Members are encouraged</h5></div>
+        <div><img class="t8" src="business.jpg">
+            <img class="t8" src="mi-logo.png">
+        </div>
+        <div class="t7"><h5>Brand and demand</h5>
+            <input class="t6" type="button" value="learn more">
+         </div>
+
+    </div>
+    <div class="m11">
+    <div><h4 class="m12">Recent</h4></div>
+    <div class="m13">
+    <div><img class="m9" src="more.png"><h5 class="m8">Web development</h5></div>
+    <div><img class="m9" src="more.png"><h5 class="m8">User Interface</h5></div>
+    <div><img class="m9" src="more.png"><h5 class="m8">Online Learning</h5></div>
+    <div><img class="m9" src="more.png"><h5 class="m8">Learn Online</h5></div>
+    <div><img class="m9" src="more.png"><h5 class="m8">Code Better</h5></div>
+    <div><img class="m9" src="more.png"><h5 class="m8">Group Learning</h5></div>
+    </div>
+    <div><h3 class="m14">Groups</h3></div>
+    <div class="m15">
+    <div><img class="m16" src="group.png"><h5 class="m17">Web development</h5></div>
+    <div><img class="m16" src="group.png"><h5 class="m17">HTML & CSS</h5></div>
+    <div><img class="m16" src="group.png"><h5 class="m17">React</h5></div>
+    <div><img class="m16" src="group.png"><h5 class="m17">Node</h5></div>
+    <div><img class="m16" src="group.png"><h5 class="m17">Python</h5></div>
+    <div><img class="m16" src="group.png"><h5 class="m17">Java</h5></div>
+    </div>
+    <div><h3 class="m18">Hastag</h3></div>
+    <div class="m15">
+    <div><img class="m19" src="hashtag.png"><h5 class="m20">Web DevelopER</h5></div>
+    <div><img class="m19" src="hashtag.png"><h5 class="m20">User Interface</h5></div>
+    <div><img class="m19" src="hashtag.png"><h5 class="m20">Online learning</h5></div>
+    </div>
+    <hr class="m21">
+    <div><h5 class="m22">Discover More</h5></div>
+    
+</div>
+    
+</body>
+</html>
